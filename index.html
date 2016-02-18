@@ -3,11 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-    <title>hingsir'site</title>
+    <title>Hingsir'site - 车兴友</title>
+    <link rel="stylesheet" href="app.css">
 </head>
 <body>
-    <h1>hello, there!</h1>
-    <h2><a href="http://blog.hingsir.com">Blog</a></h2>
-    <h2><a href="http://jstips.hingsir.com/">JS Tips</a></h2>
+    <div id="container">
+        <div id="main">
+            <div id="avatar">
+                <img src="images/avatar.png" alt="avatar.png">
+            </div>
+            <div id="content">
+                <ul id="links" class="clearfix">
+                    <li>
+                        <a href="javascript:alert('coming soon !!!');">About Me</a>
+                    </li>
+                    <li>
+                        <a href="http://blog.hingsir.com/">Blog</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/hingsir">GitHub</a>
+                    </li>
+                    <li>
+                        <a href="http://jstips.hingsir.com/">JsTips</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var getRandomColor = function(){
+            return  '#' +
+            (function(color){
+            return (color +=  '0123456789abcdef'[Math.floor(Math.random()*16)])
+              && (color.length == 6) ?  color : arguments.callee(color);
+          })('');
+        }
+        document.getElementById('links').onmouseover = function(e){
+            e = e || window.event;
+            var target  = e.target || e.srcElement;
+            if(target.tagName.toUpperCase() === 'A'){
+                target.style.color = getRandomColor();
+            }
+        }
+        document.getElementById('links').onmouseout = function(e){
+            e = e || window.event;
+            var target  = e.target || e.srcElement;
+            if(target.tagName.toUpperCase() === 'A'){
+                target.style.color = '#fff';
+            }
+        }
+    </script>
 </body>
 </html>
