@@ -38,8 +38,15 @@ html,body{
 body{
     font: 12px/1.5 'Helvetica Neue',Helvetica,Arial,sans-serif;
     position: relative;
-    background: url(images/bg.jpg);
-    background-size: 100% 100%;
+    font: 12px/1.5 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    position: relative;
+    background: radial-gradient(center , ellipse cover , rgb(130, 85, 58) 3% , rgb(70, 74, 86) 99%);
+    background: -o-radial-gradient(center , ellipse cover , rgb(130, 85, 58) 3% , rgb(70, 74, 86) 99%);
+    background: -ms-radial-gradient(center , ellipse cover , rgb(130, 85, 58) 3% , rgb(70, 74, 86) 99%);
+    background: -moz-radial-gradient(center , ellipse cover , rgb(130, 85, 58) 3% , rgb(70, 74, 86) 99%);
+    background: -webkit-radial-gradient(center , ellipse cover , rgb(130, 85, 58) 3% , rgb(70, 74, 86) 99%);
+/*  background: url(images/bg.jpg);
+    background-size: 100% 100%; */
 }
 #container{
     position: absolute;
