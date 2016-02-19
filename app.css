@@ -66,7 +66,7 @@ a:hover{
     height: 100%;
 }
 #header{
-    height: 40%;
+    height: 50%;
 }
 #avatar{
     display: block;
@@ -80,8 +80,8 @@ a:hover{
 #signature{
     text-align: center;
     font-size: 24px;
-    height: 60px;
-    line-height: 60px;
+    height: 80px;
+    line-height: 80px;
     -webkit-animation-delay: .8s;
             animation-delay: .8s;
 }
@@ -98,16 +98,36 @@ a:hover{
             animation-delay: .3s;
 }
 #content{
-    height: 60%;
+    height: 50%;
 }
 #links{
     width: 600px;
     margin: 0 auto;
-    padding-top: 100px;
     text-align: center;
     font-size: 36px;
+    line-height: 2;
 }
 #links li{
     float: left;
     width: 25%;
+}
+@media screen and (max-width:500px){
+    #container{
+        height: 400px;
+        margin-top: -200px;
+    }
+    #avatar{
+        width: 100px;
+        height: 100px;
+    }
+    #signature{
+        font-size: 18px;
+    }
+    #links{
+        width: 100%;
+        font-size: 28px;
+    }
+    #links li{
+        width:50%;
+    }
 }
