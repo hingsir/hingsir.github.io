@@ -36,9 +36,10 @@ html,body{
     height: 100%;
 }
 body{
-    font: 12px/1.5 tahoma, arial, \5b8b\4f53, sans-serif;
+    font: 12px/1.5 'Helvetica Neue',Helvetica,Arial,sans-serif;
     position: relative;
     background: url(images/bg.jpg);
+    background-size: 100% 100%;
 }
 #container{
     position: absolute;
@@ -68,12 +69,28 @@ a:hover{
     height: 180px;
     border-radius: 90px;
     margin:0 auto;
+    -webkit-animation-delay: 1.2s;
+            animation-delay: 1.2s;
 }
 #signature{
     text-align: center;
     font-size: 24px;
     height: 60px;
     line-height: 60px;
+    -webkit-animation-delay: .8s;
+            animation-delay: .8s;
+}
+.delay1{
+    -webkit-animation-delay: .1s;
+            animation-delay: .1s;
+}
+.delay2{
+    -webkit-animation-delay: .2s;
+            animation-delay: .2s;
+}
+.delay3{
+    -webkit-animation-delay: .3s;
+            animation-delay: .3s;
 }
 #content{
     height: 60%;
